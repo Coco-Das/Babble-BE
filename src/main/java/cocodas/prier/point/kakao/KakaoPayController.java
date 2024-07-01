@@ -47,7 +47,7 @@ public class KakaoPayController {
                                     @RequestParam("pg_token") String pgToken) {
         try {
             PayApproveResDto kakaoApprove = kakaoPayService.getApprove(pgToken, id);
-            response.sendRedirect("http://54.180.134.29/store");
+            response.sendRedirect("http://43.203.209.250/store");
 
 
         } catch (Exception e) {
@@ -60,7 +60,7 @@ public class KakaoPayController {
     @GetMapping("/cancel")
     public void cancel(HttpServletResponse response) {
         try {
-            response.sendRedirect("http://54.180.134.29/store");
+            response.sendRedirect("http://43.203.209.250/store");
         } catch (Exception e) {
             log.info("에러 발생");
         }
@@ -72,7 +72,7 @@ public class KakaoPayController {
     public void fail(HttpServletResponse response) {
 
         try {
-            response.sendRedirect("http://54.180.134.29/store");
+            response.sendRedirect("http://43.203.209.250/store");
         } catch (Exception e) {
             log.info("에러 발생");
         }
