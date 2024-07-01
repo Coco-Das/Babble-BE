@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://54.180.134.29")
+@CrossOrigin(origins = "http://localhost:3000")
 public class KakaoController {
 
     private final KakaoService kakaoService;
