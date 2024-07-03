@@ -21,4 +21,5 @@ public class ProjectDto {
     private List<TagDto> tags;
     private Float score;
     private String profileImageUrl;
+    private boolean isMine;
 }

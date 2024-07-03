@@ -116,12 +116,16 @@ public class ProjectController {
     // 유저 프로젝트 조회
     @GetMapping("/user-projects")
     public ResponseEntity<Page<ProjectDto>> getUserProjects(
+            @RequestHeader("Authorization") String auth,
             @RequestParam("userId") Long userId,
             @RequestParam("filter") Integer filter,
             @RequestParam(name = "page", defaultValue = "0") int page) {
 
+        String token = getToken(auth);
+
+
         Pageable pageable = PageRequest.of(page, 5);  // 페이지 크기와 페이지 번호 설정
-        return ResponseEntity.ok(projectService.getUserProjects(userId, filter, pageable));
+        return ResponseEntity.ok(projectService.getUserProjects(token, userId, filter, pageable));
     }
 
     // 나의 최근 프로젝트, 피드백 개수

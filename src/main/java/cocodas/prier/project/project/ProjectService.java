@@ -294,7 +294,8 @@ public class ProjectService {
                     project.getLink(),
                     projectTagService.getProjectTags(project),
                     score,
-                    userProfileService.getProfile(project.getUsers().getUserId()).getS3Key()
+                    userProfileService.getProfile(project.getUsers().getUserId()).getS3Key(),
+                    false
             );
         });
     }
@@ -335,14 +336,17 @@ public class ProjectService {
                 project.getLink(),
                 projectTagService.getProjectTags(project),
                 calculateScore(project),
-                userProfileService.getProfile(project.getUsers().getUserId()).getS3Key()
+                userProfileService.getProfile(project.getUsers().getUserId()).getS3Key(),
+                true
         ));
     }
 
     // 유저 프로젝트 조회
-    public Page<ProjectDto> getUserProjects(Long userId, int filter, Pageable pageable) {
+    public Page<ProjectDto> getUserProjects(String token, Long userId, int filter, Pageable pageable) {
         Users user = userRepository.findById(userId)
                 .orElseThrow(() -> new RuntimeException("존재하지 않는 유저"));
+
+        Users loginUser = getUsersByToken(token);
 
         Specification<Project> spec = (root, query, cb) -> {
             List<Predicate> predicates = new ArrayList<>();
@@ -381,7 +385,8 @@ public class ProjectService {
                     project.getLink(),
                     projectTagService.getProjectTags(project),
                     calculateScore(project),
-                    userProfileService.getProfile(project.getUsers().getUserId()).getS3Key()
+                    userProfileService.getProfile(project.getUsers().getUserId()).getS3Key(),
+                    project.getUsers().equals(loginUser)
             );
         });
     }
@@ -420,7 +425,8 @@ public class ProjectService {
                         project.getLink(),
                         projectTagService.getProjectTags(project),
                         calculateScore(project),
-                        userProfileService.getProfile(project.getUsers().getUserId()).getS3Key()
+                        userProfileService.getProfile(project.getUsers().getUserId()).getS3Key(),
+                        false
                 ));
     }
 
