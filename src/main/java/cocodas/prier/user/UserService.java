@@ -295,7 +295,7 @@ public class UserService {
         Long userId = findUserIdByJwt(token);
         Users users = findUserExist(userId);
 
-        users.updateMetadata("basic_profile.png");
+        users.updateMetadata("userProfile.svg");
         users.updateS3Key(defaultProfileS3Key);
     }
 

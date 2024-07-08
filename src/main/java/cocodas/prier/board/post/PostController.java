@@ -36,8 +36,10 @@ public class PostController {
     // 특정 게시글 조회하기
     @GetMapping("/posts/{postId}")
     @ResponseStatus(HttpStatus.OK)
-    public PostDetailResponseDto getPostByPostId(@PathVariable(name = "postId") Long postId) {
-        return postService.findByPostId(postId);
+    public PostDetailResponseDto getPostByPostId(@RequestHeader("Authorization") String authorizationHeader,
+                                                 @PathVariable(name = "postId") Long postId) {
+        String token = authorizationHeader.replace("Bearer ", "");
+        return postService.findByPostId(token, postId);
     }
 
     // 내가 작성한 게시글 모두 조회하기
