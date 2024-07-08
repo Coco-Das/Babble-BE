@@ -74,13 +74,15 @@ public class PostService {
 
     // postId로 게시글 조회하기(특정 글 조회하기)
     @Transactional
-    public PostDetailResponseDto findByPostId(Long postId) {
+    public PostDetailResponseDto findByPostId(String token, Long postId) {
         Post post = findById(postId);
         post.updateViews(post.getViews() + 1);
 
-        Long userId = post.getUsers().getUserId();
+        Long userId = findUserIdByJwt(token);
 
-        ProfileImgDto profile = userService.getProfile(userId);
+        Long postUserId = post.getUsers().getUserId();
+
+        ProfileImgDto profile = userService.getProfile(postUserId);
 
         return new PostDetailResponseDto(
                 post.getUsers().getUserId(),
@@ -90,7 +92,7 @@ public class PostService {
                 post.getContent(),
                 post.getUsers().getNickname(),
                 post.getCategory().name(),
-                post.getLikes().stream().anyMatch(likes -> likes.getUsers().getUserId().equals(post.getUsers().getUserId())),
+                post.getLikes().stream().anyMatch(likes -> likes.getUsers().getUserId().equals(userId)),
                 postMediaService.getPostMediaDetail(post),
                 post.getViews(),
                 post.getLikes().size(),
