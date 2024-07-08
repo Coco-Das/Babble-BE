@@ -286,6 +286,7 @@ public class ProjectService {
             Float score = project.getCalculatedScore();
             return new ProjectDto(
                     project.getProjectId(),
+                    project.getUsers().getUserId(),
                     project.getTitle(),
                     project.getTeamName(),
                     projectMediaService.getMainImageUrl(project),
@@ -328,6 +329,7 @@ public class ProjectService {
 
         return projects.map(project -> new ProjectDto(
                 project.getProjectId(),
+                project.getUsers().getUserId(),
                 project.getTitle(),
                 project.getTeamName(),
                 projectMediaService.getMainImageUrl(project),
@@ -377,6 +379,7 @@ public class ProjectService {
 
             return new ProjectDto(
                     project.getProjectId(),
+                    project.getUsers().getUserId(),
                     project.getTitle(),
                     project.getTeamName(),
                     projectMediaService.getMainImageUrl(project),
@@ -417,6 +420,7 @@ public class ProjectService {
         return projectRepository.findByKeyword(keyword, pageable)
                 .map(project -> new ProjectDto(
                         project.getProjectId(),
+                        project.getUsers().getUserId(),
                         project.getTitle(),
                         project.getTeamName(),
                         projectMediaService.getMainImageUrl(project),
