@@ -12,6 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 public class ProjectDto {
     private Long projectId;
+    private Long userId;
     private String title;
     private String teamName;
     private String mainImageUrl;
