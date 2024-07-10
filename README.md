@@ -1,7 +1,6 @@
 # PRIER (Project + Reviewer)
 > 프리어는 개발한 프로젝트를 많은 사람들에게 쉽게 피드백을 받을 수 있는 서비스입니다.
-> 
-<img width="1512" alt="스크린샷 2024-07-10 오후 4 55 29" src="https://github.com/Coco-Das/PRIER-BE/assets/144209738/c4405052-5887-463e-ab01-a8ff564f9bfe">
+
 
 
 <br>
