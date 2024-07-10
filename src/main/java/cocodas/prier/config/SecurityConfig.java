@@ -35,6 +35,8 @@ public class SecurityConfig {
             "/js/**",
             "/manifest.json",
             "/",
+            "http://localhost:3000",
+            "http://43.203.209.250",
             "/kakao/login",
             "/kakao/callback",
             "/kakao/callback/**",
@@ -74,7 +76,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://43.203.209.250")); // 허용할 도메인 설정
+        configuration.setAllowedOrigins(List.of("http://43.203.209.250", "http://localhost:3000")); // 허용할 도메인 설정
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("Authorization", "Cache-Control", "Content-Type"));
         configuration.setAllowCredentials(true);
