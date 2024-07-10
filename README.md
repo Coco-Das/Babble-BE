@@ -1,12 +1,9 @@
-# 다양한 피드백을 받을 수 있는 프로젝트 테스트, Prier
+# PRIER (Project + Reviewer)
+> 프리어는 개발한 프로젝트를 많은 사람한테 쉽게 피드백을 받을 수 있는 서비스입니다.
 
 <br/>
 
-## Introduce
-
-<br/>
-
-## 팀원 구성
+## 팀원 구성 및 역할
 #### FE(프론트엔드)
 |**문규리(FE)** | **박은진(FE)** | **이인지(FE)**| 
 |:-----------:|:-----------:|:-----------:|
@@ -20,12 +17,17 @@
 | [<img src="https://github.com/Coco-Das/PRIER-BE/assets/108293826/891c341b-26ad-4080-aff8-19f888f63deb" height=120 width=130> <br/> @kimseonhee126](https://github.com/kimseonhee126) | [<img src="https://github.com/Coco-Das/PRIER-BE/assets/144209738/8260248e-17be-4993-89b0-b7d579068726" height=120 width=120> <br/> @saokiritoni](https://github.com/saokiritoni) | [<img src="https://avatars.githubusercontent.com/u/89083254?v=4" height=120 width=120> <br/> @popeye0618](https://github.com/popeye0618) | [<img src="https://github.com/Coco-Das/PRIER-BE/assets/64404604/5930bc92-6c61-41f1-afee-627bda54bd17" height=120 width=120> <br/> @hacomarch](https://github.com/hacomarch) |
 
 
+#### 역할
+<img width="842" alt="스크린샷 2024-07-10 오후 4 42 42" src="https://github.com/saokiritoni/PRIER-BE/assets/144209738/5238e655-36be-44e7-9460-f8372c2c7d8f">
 
 
 
 <br/>
 
 ## 기술 스택
+
+<img width="598" alt="스크린샷 2024-07-10 오후 4 45 28" src="https://github.com/saokiritoni/PRIER-BE/assets/144209738/f70912b5-3026-436b-a174-89f9c2022440">
+
 #### FE
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -51,6 +53,7 @@
 ![OpenAI API](https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white)
 
 
+<br>
 
 #### Server
 ![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
@@ -61,7 +64,12 @@
 
 <br/>
 
+
+
 ## 주요 기능
+<img width="860" alt="스크린샷 2024-07-10 오후 4 41 50" src="https://github.com/saokiritoni/PRIER-BE/assets/144209738/5110f5e7-7706-4483-90d2-26b17fbd89f0">
+
+
 ## DB 설계
 
 ![prier-DB (1)](https://github.com/saokiritoni/PRIER-BE/assets/144209738/d7748509-433d-44dc-8957-969c9baff381)
@@ -69,7 +77,7 @@
 
 <br/>
 
-# 프로젝트 실행 방법
+## 프로젝트 실행 방법
 ```shell
 # .jar 파일로 만들기
 ./gradlew build jar
