@@ -1,28 +1,12 @@
 # PRIER (Project + Reviewer)
 > 프리어는 개발한 프로젝트를 많은 사람한테 쉽게 피드백을 받을 수 있는 서비스입니다.
-
-<br/>
-
-## 팀원 구성 및 역할
-#### FE(프론트엔드)
-|**문규리(FE)** | **박은진(FE)** | **이인지(FE)**| 
-|:-----------:|:-----------:|:-----------:|
-|[<img src="" height=120 width=120> <br/> @rbfl1260](https://github.com/rbfl1260)  |[<img src="" height=120 width=120> <br/> @potatoj1n](https://github.com/potatoj1n) | [<img src="" height=120 width=120> <br/> @inji0212](https://github.com/inji0212) |
-
-<br/>
-
-#### BE(백엔드)
-|                                        **김선희(BE)**                                         | **이소은(BE)** | **천승환(BE)** | **윤하은(BE)** |
-|:------------------------------------------------------------------------------------------:|:-----------:|:-----------:|:-----------:|
-| [<img src="https://github.com/Coco-Das/PRIER-BE/assets/108293826/891c341b-26ad-4080-aff8-19f888f63deb" height=120 width=130> <br/> @kimseonhee126](https://github.com/kimseonhee126) | [<img src="https://github.com/Coco-Das/PRIER-BE/assets/144209738/8260248e-17be-4993-89b0-b7d579068726" height=120 width=120> <br/> @saokiritoni](https://github.com/saokiritoni) | [<img src="https://avatars.githubusercontent.com/u/89083254?v=4" height=120 width=120> <br/> @popeye0618](https://github.com/popeye0618) | [<img src="https://github.com/Coco-Das/PRIER-BE/assets/64404604/5930bc92-6c61-41f1-afee-627bda54bd17" height=120 width=120> <br/> @hacomarch](https://github.com/hacomarch) |
+> 
+<img width="1512" alt="스크린샷 2024-07-10 오후 4 55 29" src="https://github.com/Coco-Das/PRIER-BE/assets/144209738/c4405052-5887-463e-ab01-a8ff564f9bfe">
 
 
-#### 역할
-<img width="842" alt="스크린샷 2024-07-10 오후 4 42 42" src="https://github.com/saokiritoni/PRIER-BE/assets/144209738/5238e655-36be-44e7-9460-f8372c2c7d8f">
+<br>
 
 
-
-<br/>
 
 ## 기술 스택
 
@@ -36,7 +20,7 @@
 ![Zustand](https://img.shields.io/badge/Zustand-3DDC84?style=for-the-badge&logo=zustand&logoColor=white)
 
 
-<br/>
+<br>
 
 #### BE
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) 
@@ -62,9 +46,28 @@
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-<br/>
+<br>
+
+## 팀원 구성 및 역할
+#### FE(프론트엔드)
+|**문규리(FE)** | **박은진(FE)** | **이인지(FE)**| 
+|:-----------:|:-----------:|:-----------:|
+|[<img src="" height=120 width=120> <br/> @rbfl1260](https://github.com/rbfl1260)  |[<img src="" height=120 width=120> <br/> @potatoj1n](https://github.com/potatoj1n) | [<img src="" height=120 width=120> <br/> @inji0212](https://github.com/inji0212) |
+
+<br>
+
+#### BE(백엔드)
+|                                        **김선희(BE)**                                         | **이소은(BE)** | **천승환(BE)** | **윤하은(BE)** |
+|:------------------------------------------------------------------------------------------:|:-----------:|:-----------:|:-----------:|
+| [<img src="https://github.com/Coco-Das/PRIER-BE/assets/108293826/891c341b-26ad-4080-aff8-19f888f63deb" height=120 width=130> <br/> @kimseonhee126](https://github.com/kimseonhee126) | [<img src="https://github.com/Coco-Das/PRIER-BE/assets/144209738/8260248e-17be-4993-89b0-b7d579068726" height=120 width=120> <br/> @saokiritoni](https://github.com/saokiritoni) | [<img src="https://avatars.githubusercontent.com/u/89083254?v=4" height=120 width=120> <br/> @popeye0618](https://github.com/popeye0618) | [<img src="https://github.com/Coco-Das/PRIER-BE/assets/64404604/5930bc92-6c61-41f1-afee-627bda54bd17" height=120 width=120> <br/> @hacomarch](https://github.com/hacomarch) |
 
 
+#### 역할
+<img width="842" alt="스크린샷 2024-07-10 오후 4 42 42" src="https://github.com/saokiritoni/PRIER-BE/assets/144209738/5238e655-36be-44e7-9460-f8372c2c7d8f">
+
+
+
+<br>
 
 ## 주요 기능
 <img width="860" alt="스크린샷 2024-07-10 오후 4 41 50" src="https://github.com/saokiritoni/PRIER-BE/assets/144209738/5110f5e7-7706-4483-90d2-26b17fbd89f0">
@@ -75,7 +78,7 @@
 ![prier-DB (1)](https://github.com/saokiritoni/PRIER-BE/assets/144209738/d7748509-433d-44dc-8957-969c9baff381)
 
 
-<br/>
+<br>
 
 ## 프로젝트 실행 방법
 ```shell
